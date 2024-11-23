@@ -1,4 +1,7 @@
 /* Nav */
+body{
+    margin: 0;
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -149,37 +152,6 @@
     font-family: sans-serif;
 }
 
-/* Footer */
-.footer {
-    background-color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5rem;
-    padding: 0.3rem 3%;
-    border-top: 3px solid rgb(200, 200, 200);
-}
-
-.footer a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    font-family: sans-serif;
-}
-
-.footer_img {
-    margin: 1rem;
-    width: 2.5rem;
-}
-
-.footer_logo {
-    width: 10rem;
-    opacity: 80%;
-}
-
 /* section 3 */
 .section_3 {
     min-height: 75vh;
@@ -298,7 +270,95 @@
     font-family: sans-serif;
 }
 
-@media (min-width: 1900px) {
+/* Footer */
+footer{
+    background-color: #DFDFDF;
+    padding-top: 3rem;
+    margin-top: 7rem;
+    padding-bottom: 2rem;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #343434;
+    font-family: sans-serif;
+}
+.footer-content{
+    width: 33.3%;
+}
+.footer-content p{
+    width: 16rem;
+    margin: auto;
+    padding: 7px;
+    color: #343434;
+    font-family: sans-serif;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+    color: #343434;
+    font-family: sans-serif;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #343434;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.list-sosmed{
+    padding: 0;
+    text-align: center;
+}
+.list-sosmed li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.list-sosmed img{
+    width: 2.4rem;
+}
+footer a{
+    text-decoration: none;
+    color: #343434;
+}
+.footer-bottom{
+    background-color: #343434;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+.footer-bottom p{
+    color: #DFDFDF;
+    margin: 0;
+    font-size: 1rem;
+    padding: 7px;
+    font-family: sans-serif;
+}
+
+@media (min-width: 1440px) {
     html {
         font-size: 120%;
     }
@@ -323,5 +383,10 @@
 @media (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+}
+@media (max-width: 375px) {
+    html {
+        font-size: 45%;
     }
 }
